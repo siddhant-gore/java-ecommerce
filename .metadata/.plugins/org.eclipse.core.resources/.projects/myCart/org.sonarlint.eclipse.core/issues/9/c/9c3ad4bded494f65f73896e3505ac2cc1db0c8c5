@@ -1,0 +1,6 @@
+
+rsquid:S1118":Add a private constructor to hide the implicit public one.(þ·½žþÿÿÿÿ8³ÐÅù0HORMAJORZ
+CODE_SMELL
+gsquid:EmptyStatementUsageCheck"Remove this empty statement.(áÞµÉùÿÿÿÿ8ðã¿Åù0HXRMINORZ
+CODE_SMELL
+^squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8²ÐÅù0HNRMINORZVULNERABILITY

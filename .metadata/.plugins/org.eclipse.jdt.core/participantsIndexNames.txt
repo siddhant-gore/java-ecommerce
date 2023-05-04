@@ -1,0 +1,9 @@
+INDEX VERSION 1.131
+C:\Users\siddh\OneDrive\Desktop\practice project ecom\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3295393010.index
+\myCart\src\main\resources
+C:\Users\siddh\OneDrive\Desktop\practice project ecom\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\939258027.index
+\myCart\src\main\resources
+C:\Users\siddh\OneDrive\Desktop\practice project ecom\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1297798450.index
+\myCart\src\main\resources
+C:\Users\siddh\OneDrive\Desktop\practice project ecom\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1653194974.index
+\myCart\src\main\resources

@@ -1,0 +1,7 @@
+127.0.0.1 - - [30/Apr/2023:22:37:41 +0530] "GET /myCart/js/script.js HTTP/1.1" 304 -
+127.0.0.1 - - [30/Apr/2023:22:37:41 +0530] "GET /myCart/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [30/Apr/2023:22:37:45 +0530] "GET /myCart/register.jsp HTTP/1.1" 200 4568
+127.0.0.1 - - [30/Apr/2023:22:37:48 +0530] "GET /myCart/login.jsp HTTP/1.1" 200 3697
+127.0.0.1 - - [30/Apr/2023:22:37:50 +0530] "GET /myCart/register.jsp HTTP/1.1" 200 4568
+127.0.0.1 - - [30/Apr/2023:22:37:56 +0530] "GET /myCart/login.jsp HTTP/1.1" 200 3697
+127.0.0.1 - - [30/Apr/2023:22:37:58 +0530] "GET /myCart/register.jsp HTTP/1.1" 200 4568

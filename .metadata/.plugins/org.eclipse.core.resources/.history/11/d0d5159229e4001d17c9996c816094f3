@@ -1,0 +1,71 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>MyCart-Registration</title>
+<%@include file="components/common_css_js.jsp" %>
+
+</head>
+<body>
+<%@include file="components/navbar.jsp" %>
+
+<div class="container-fluid">
+
+<div class="row mt-2 mb-3" >
+	<div class="col-md-4 offset-md-4">	
+	
+	<div class="card reg-form-shadow">
+		<div class="card-body px-5 ">
+		<h3 class="text-center">Registration!!!</h3>
+	<form>
+	
+  <div class="mb-3">
+    <label for="userName" class="form-label">User Name</label>
+    <input type="text" class="form-control" id="userName">
+  </div>
+	
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="userEmail" class="form-control" id="userEmail" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  
+  <div class="mb-3">
+    <label for="userPhone" class="form-label">Phone number</label>
+    <input type="number" class="form-control" id="userPhone">
+  </div>
+  
+  <div class="mb-3">
+    <label for="userAddress">User Address</label>
+    <textarea style="height: 120px; " id="userAddress" class="form-control" placeholder="Enter your address"></textarea>
+  </div>
+  
+  <div class="mb-3 form-check" >
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Accept T&C</label>
+  </div>
+  <div class="container text-center">
+    <button class="btn btn-outline-success">Register</button>
+    <button class="btn btn-outline-warning">Reset</button>
+  
+  </div>
+</form>
+		</div>
+	
+	</div>
+	
+	</div>
+
+</div>
+
+
+
+</div>
+
+</body>
+</html>
