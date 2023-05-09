@@ -1,7 +1,9 @@
+<%@page import="com.learn.mycart.entities.User" %>
+<%
+		User user1 = (User)session.getAttribute("current-user");
+%>
 
-
-
-<nav class="navbar navbar-expand-lg navbar-dark navbar mb-3 bg-body-tertiary mycart-bg">
+<nav class="element-shadow navbar-expand-lg navbar-dark navbar mb-3 bg-body-tertiary mycart-bg">
   
   
   <div class="container">
@@ -32,15 +34,55 @@
         </li>
       </ul>      
     </div>
+    
+    <%
+    
+    if(user1 == null){
+    
+    %>
+    
     <ul class="navbar-nav ml-auto">
       	<li class="nav-item active">
-      		<a class="nav-link" href="login.jsp">Login</a>
+      		<a class="nav-link active" href="login.jsp">Login</a>
       	</li>
       	<li class="nav-item active">
-      		<a class="nav-link" href="register.jsp">Register</a>
+      		<a class="nav-link active" href="register.jsp">Register</a>
       	</li>
       	      
       </ul>
+    
+    
+    <%	
+    	
+    }
+    
+    
+    
+    
+    
+    else{
+    	
+    %>
+    <ul class="navbar-nav ml-auto">
+      	<li class="nav-item active">
+      		<a class="nav-link" href="#!"><%= user1.getUserName() %></a>
+      	</li>
+      	<li class="nav-item active">
+      		<a class="nav-link" href="logoutServlet">Logout</a>
+      	</li>
+      	      
+      </ul>
+    
+    
+    <%	
+    	
+    	
+    }
+    
+    
+    
+    %>
+    
   </div>
   
   

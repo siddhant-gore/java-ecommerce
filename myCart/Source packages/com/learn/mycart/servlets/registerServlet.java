@@ -1,6 +1,7 @@
 package com.learn.mycart.servlets;
 
 import java.io.IOException;
+
 import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
@@ -39,7 +40,7 @@ public class registerServlet extends HttpServlet {
 		
 		//creating user object to store data
 		
-		User user = new User( userName, userEmail, userPassword, userPhone, userAddress); 
+		User user = new User( userName, userEmail, userPassword, userPhone, userAddress, "normal"); 
 			
 		Session hibernateSession = FactoryProvider.getFactory().openSession();
 		Transaction tx = hibernateSession.beginTransaction();

@@ -31,3 +31,25 @@ V
 &src/main/webapp/components/message.jsp,4\b\4b0e204594599132d584bace0a48ce0bf02096d2
 I
 src/main/webapp/login.jsp,8\5\85ee523d01e5e19376db640e846c91bbcb0a1c22
+k
+;Source packages/com/learn/mycart/servlets/loginServlet.java,7\d\7da5b37df6752ea73ef7f30aa7316449597a3d8e
+a
+1Source packages/com/learn/mycart/dao/UserDao.java,4\f\4fc54125f7c1d00b7740dfc7ee2f6b33bcb0e60b
+l
+<Source packages/com/learn/mycart/servlets/logoutServlet.java,a\8\a8aa3637676a862947d0e1b9567ceb461bb2092a
+L
+src/main/webapp/img/user.png,6\d\6d333aeb776171e5b6c4f26c57bfc5233c64ce8a
+Q
+!src/main/webapp/img/all users.png,7\0\70a65416fcaab480f1d57f29d770dd1d0f2767e7
+I
+src/main/webapp/admin.jsp,1\6\16c841072742f24edfb63d62f4da7ea207d6a9cd
+J
+src/main/webapp/normal.jsp,7\5\7548cade346deeba0a41e59353536b3e363cb51a
+e
+5Source packages/com/learn/mycart/dao/CategoryDao.java,4\e\4e63f506f39ddeb4b5c51d9649dc21b3bd9f947d
+v
+FSource packages/com/learn/mycart/servlets/productOperationServlet.java,f\f\ff4adfc3506f01703e62164c7e847698226d64e6
+d
+4Source packages/com/learn/mycart/dao/ProductDao.java,7\2\7215b206a63d2293eb39206f97ab581d5e53513a
+o
+?Source packages/com/learn/mycart/helper/ProductDiscription.java,7\e\7ef0cb2beb06e80495536b5bae0adea1330acad9

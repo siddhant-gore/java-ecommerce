@@ -1,0 +1,6 @@
+
+Isquid:S1643
+"Use a StringBuilder instead.(ø¾‚H°RMINORZ
+CODE_SMELL
+lsquid:S1118":Add a private constructor to hide the implicit public one.(Ôƒ–üÿÿÿÿH±RMAJORZ
+CODE_SMELL

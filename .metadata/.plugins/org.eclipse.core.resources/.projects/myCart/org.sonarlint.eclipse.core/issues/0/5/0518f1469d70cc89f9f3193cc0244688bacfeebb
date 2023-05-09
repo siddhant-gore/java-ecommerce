@@ -1,14 +1,14 @@
 
-gsquid:S1161H":Add the "@Override" annotation above this method signature(‹¨¯¿HÛRMAJORZ
+tsquid:S2095-"EUse try-with-resources or close this "Session" in a "finally" clause.(Çÿİ8İ‡Íõû0HüRBLOCKERZBUG
+„squid:CommentedOutCodeLine<"<This block of commented-out lines of code should be removed.(ş¥ñˆúÿÿÿÿ8ğâÍÚü0HúRMAJORZ
 CODE_SMELL
-Xsquid:S1989"(Add a "try/catch" block for "getWriter".(ÏÚ‚´HÜRMINORZVULNERABILITY
-Ysquid:S1989I"$Add a "try/catch" block for "doGet".(®Ó‘ûÿÿÿÿÿHİRMINORZVULNERABILITY
-tsquid:S2095,"EUse try-with-resources or close this "Session" in a "finally" clause.(Çÿİ8İ‡Íõû0HŞRBLOCKERZBUG
-_squid:S1148@"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8İ‡Íõû0HßRMINORZVULNERABILITY
-„squid:CommentedOutCodeLine;"<This block of commented-out lines of code should be removed.(ş¥ñˆúÿÿÿÿ8ğâÍÚü0HàRMAJORZ
+gsquid:S1161I":Add the "@Override" annotation above this method signature(‹¨¯¿HıRMAJORZ
 CODE_SMELL
-Osquid:S36269"Remove this redundant jump.(ûÁİ…8‹åÏÚü0HáRMINORZ
+lsquid:S1161":Add the "@Override" annotation above this method signature(Ïû©ÖûÿÿÿÿH€	RMAJORZ
 CODE_SMELL
-lsquid:S1161":Add the "@Override" annotation above this method signature(Ïû©ÖûÿÿÿÿHâRMAJORZ
+Xsquid:S1989"(Add a "try/catch" block for "getWriter".(ÏÚ‚´HûRMINORZVULNERABILITY
+Ysquid:S1989J"$Add a "try/catch" block for "doGet".(®Ó‘ûÿÿÿÿÿHşRMINORZVULNERABILITY
+Osquid:S3626:"Remove this redundant jump.(ûÁİ…8‹åÏÚü0HÿRMINORZ
 CODE_SMELL
-Ysquid:S1989I"$Add a "try/catch" block for "doGet".(®Ó‘ûÿÿÿÿÿHãRMINORZVULNERABILITY
+_squid:S1148A"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8İ‡Íõû0H‚	RMINORZVULNERABILITY
+Ysquid:S1989J"$Add a "try/catch" block for "doGet".(®Ó‘ûÿÿÿÿÿH	RMINORZVULNERABILITY

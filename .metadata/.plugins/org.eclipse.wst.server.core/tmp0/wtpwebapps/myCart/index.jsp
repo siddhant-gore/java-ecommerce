@@ -1,5 +1,14 @@
-<%@page contentType="text/html; charset=ISO-8859-1" pageEncoding="UTF-8" %>
+<%@page contentType="text/html; charset=ISO-8859-1" pageEncoding="UTF-8"%>
 <%@page import="com.learn.mycart.helper.FactoryProvider"%>
+<%@page import="com.learn.mycart.entities.Product"%>
+<%@page import="com.learn.mycart.dao.ProductDao"%>
+<%@page import="com.learn.mycart.dao.CategoryDao"%>
+<%@page import="com.learn.mycart.entities.Category"%>
+<%@page import="com.learn.mycart.helper.ProductDiscription"%>
+
+
+
+<%@page import="java.util.List"%>
 
 <!DOCTYPE html>
 <html>
@@ -7,20 +16,124 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>MyCart</title>
 
-<%@include file="components/common_css_js.jsp" %>
+<%@include file="components/common_css_js.jsp"%>
 
 </head>
 <body>
 
-<%@include file="components/navbar.jsp" %>
+	<%@include file="components/navbar.jsp"%>
 
-<h2>Hello World!</h2>
-<h1>Hi let's begin our 1st project</h1>
-<h2>Creating session factory object</h2>
+	<div class="row mx-2">
 
-<%out.println(FactoryProvider.getFactory());%><br>
-<%out.println(FactoryProvider.getFactory());%><br>
-<%out.println(FactoryProvider.getFactory());%>
+		<%
+		
+			String cat=request.getParameter("category");
+		
+			ProductDao dao = new ProductDao(FactoryProvider.getFactory());
+		List<Product> list=null;
+						
+						
+		    if( cat==null || cat.trim().equals("all"))
+			{
+				list = dao.getAllProducts();
+			}else{
+				
+				int cid=Integer.parseInt(cat.trim());
+				list=dao.getAllProductsById(cid);
+				
+			}
+		
+			
+			CategoryDao cdao = new CategoryDao(FactoryProvider.getFactory());
+			List<Category> clist = cdao.getCategories();
+		%>
+
+		<!-- show categories -->
+		<div class="col-md-2">
+			<div class="list-group element-shadow">
+				<a href="index.jsp?category=all" class="list-group-item list-group-item-action active"
+					aria-current="true"> All Products </a>
+
+
+
+
+				<%
+					for (Category c : clist) {
+						//	out.println(c.getCategoryTitle() + "<br>");
+				%>
+				<a href="index.jsp?category=<%= c.getCategoryId() %>" class="list-group-item list-group-item-action"><%=c.getCategoryTitle()%></a>
+
+
+				<%
+					}
+				%>
+
+
+			</div>
+
+		</div>
+
+		<!-- show products -->
+		<div class="col-md-9">
+
+
+			
+				<!-- col:12 -->
+
+				<div class="col-md-12">
+					<div class="row row-cols-1 row-cols-md-3 g-4 mb-3">
+
+
+						<!-- traversing products -->
+						<%
+							for (Product p : list) {
+						%>
+						<div class="col">
+						<div class="card element-shadow product-card">
+							<div class="container text-center">
+								<img src="img/products/<%=p.getProductPic()%>"
+									style="max-height: 200px; max-width: 100%; "
+									class=" m-2" alt="...">
+
+							</div>
+
+							<div class="card-body">
+
+								<h5 class="card-title"><%=p.getProductName()%></h5>
+								<p class="card-text"><%=ProductDiscription.get10Words(p.getProductDescription())%></p>
+							</div>
+							<div class="card-footer">
+								<button class="btn btn-outline-success" disabled>&#8377; <%= p.getDiscountedPrice()%>/- <span class="text-secondary discount-label text-strike"><%=p.getProductPrice()%>/-</span><span class="discount-label discount-color"> <%= p.getProductDiscount()%>% off</span></button>
+								<button class="btn btn-primary mycart-btn">Add to Cart</button>
+							</div>
+
+
+						</div>
+						</div>
+
+
+						<%
+							}
+						
+								if(list.size()==0)
+								{
+									out.println("<h3>No item in this Category!!!</h3>");
+								}
+						
+						%>
+
+					</div>
+
+				</div>
+
+			</div>
+
+
+		
+
+	</div>
+
+
 
 </body>
 </html>

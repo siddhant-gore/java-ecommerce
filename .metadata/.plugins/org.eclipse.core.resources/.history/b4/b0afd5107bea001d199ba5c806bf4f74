@@ -1,0 +1,46 @@
+
+package com.learn.mycart.servlets;
+import java.io.IOException;
+
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.*;
+
+import com.learn.mycart.dao.userDao;
+import com.learn.mycart.entities.User;
+import com.learn.mycart.helper.FactoryProvider;
+
+public class loginServlet1 extends HttpServlet{
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+		throws ServletException, IOException{
+	  response.setContentType("text/html;charset=UTF-8");
+	  try(PrintWriter out = response.getWriter()){
+		  
+		  //Data fetch
+		  String email = request.getParameter("user_email");
+		  String password = request.getParameter("user_password");
+		  
+		  //validations
+		  
+		  //authenticating user
+		  
+		  userDao userDao = new userDao(FactoryProvider.getFactory());
+		  User user = userDao.getUserByEmailAndPassword(email, password);
+		  System.out.println(user);
+		  
+		  if(user == null) {
+			  out.println("<h1> Invalid details </h1>");
+		  } else {
+			  out.println("<h1>Welcome"+ user.getUserName()+"</h1>");
+		  }
+		  
+	  }
+	}
+}

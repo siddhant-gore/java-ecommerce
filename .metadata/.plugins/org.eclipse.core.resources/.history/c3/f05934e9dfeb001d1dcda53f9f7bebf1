@@ -1,0 +1,22 @@
+package com.learn.mycart.dao;
+
+import org.hibernate.SessionFactory;
+
+import com.learn.mycart.entities.User;
+
+public class UserDao {
+	
+	private SessionFactory factory;
+
+	public UserDao(SessionFactory factory) {
+		this.factory = factory;
+	}
+	
+	//get user by email & password
+	public User getUserByEmailAndPassword(String email, String password)
+	{
+		User user=null;
+		return user;
+	}
+
+}

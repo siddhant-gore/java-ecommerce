@@ -1,0 +1,41 @@
+@charset "ISO-8859-1";
+
+:root{
+	
+	--theme-color: red;
+}
+.mycart-bg{
+	background: var(--theme-color) !important;
+}
+
+.navbar{
+	box-shadow: 0px 15px 8px -6px rgba(0, 0, 0, .5);
+}
+
+.mycart-form-shadow{
+	box-shadow: 10px 15px 8px -6px rgba(0, 0, 0, .5);
+}
+
+.mycart-btn{
+	background:  var(--theme-color) !important;
+}
+.mycart-btn:hover{
+	 box-shadow: 0px 0px 5px var(--theme-color), 0px 0px 10px var(--theme-color), 0px 0px 15px var(--theme-color), 0px 0px 50px var(--theme-color);
+}
+
+.admin .card{
+	border: 1px solid;
+}
+
+.admin .card:hover{
+	background: var(--theme-color);
+	cursor: pointer;
+}
+
+.list-group-item.active{
+	
+	background: var(--theme-color) !important;
+	border-color: var(--theme-color) !important;
+	
+	
+}

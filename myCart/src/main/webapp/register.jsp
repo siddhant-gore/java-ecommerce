@@ -16,7 +16,7 @@
 		<div class="row mt-0 mb-3 ">
 			<div class="col-md-4 offset-md-4">
 
-				<div class="card mycart-form-shadow">
+				<div class="card element-shadow">
 					<div class="card-header mycart-bg">
 						<h3 class="text-center">Registration!!!</h3>
 

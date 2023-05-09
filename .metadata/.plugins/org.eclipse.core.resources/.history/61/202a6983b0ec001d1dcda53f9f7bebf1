@@ -1,0 +1,15 @@
+package com.learn.mycart.dao;
+
+import org.hibernate.SessionFactory;
+
+public class CategoryDao {
+	
+	private SessionFactory factory;
+
+	public CategoryDao(SessionFactory factory) {
+		this.factory = factory;
+	}
+	
+	
+
+}

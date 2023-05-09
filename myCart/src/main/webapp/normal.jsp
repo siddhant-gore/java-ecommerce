@@ -1,0 +1,37 @@
+<%@page import="com.learn.mycart.entities.User" %>
+<%
+
+		User user = (User)session.getAttribute("current-user");
+		if(user==null)
+		{
+			session.setAttribute("message","You are not logged in !! Please Login");
+			response.sendRedirect("login.jsp");
+			return;
+		}else
+		{
+			if(user.getUserType().equals("admin"))
+			{
+				session.setAttribute("message", "You are Admin, Plz use User Login to continue.");
+				response.sendRedirect("login.jsp");
+				return;
+			}
+		}
+
+
+%>
+
+
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<%@include file="components/common_css_js.jsp" %>
+<meta charset="ISO-8859-1">
+<title>User</title>
+</head>
+<body>
+<%@include file="/components/navbar.jsp" %>
+<h1>User</h1>
+</body>
+</html>

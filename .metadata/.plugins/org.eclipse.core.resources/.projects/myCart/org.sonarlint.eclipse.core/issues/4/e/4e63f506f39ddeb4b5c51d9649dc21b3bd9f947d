@@ -1,0 +1,6 @@
+
+squid:S1488%"\Immediately return this expression instead of assigning it to the temporary variable "list".(ŸĞ×Û8û„­ÿ0H÷	RMINORZ
+CODE_SMELL
+ysquid:S2095#"EUse try-with-resources or close this "Session" in a "finally" clause.(ÚÓ¡Ûûÿÿÿÿ8û„­ÿ0Hö	RBLOCKERZBUG
+ysquid:S2095."EUse try-with-resources or close this "Session" in a "finally" clause.(œÔ¬Ÿÿÿÿÿÿ8ê®Ù¹ÿ0HâRBLOCKERZBUG
+_squid:S11482"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ê®Ù¹ÿ0HãRMINORZVULNERABILITY

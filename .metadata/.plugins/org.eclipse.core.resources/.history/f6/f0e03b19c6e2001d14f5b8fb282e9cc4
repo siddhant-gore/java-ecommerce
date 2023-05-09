@@ -1,8 +1,0 @@
-@charset "ISO-8859-1";
-
-body{
-	bg-color:green;
-}
-.custom-bg{
-	background:#75e900 !important;
-}

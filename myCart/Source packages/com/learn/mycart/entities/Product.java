@@ -166,7 +166,10 @@ public class Product {
 	
 	
 	
-	
+	public int getDiscountedPrice() {
+		int d = (int)((this.getProductDiscount() / 100.0)*this.getProductPrice());
+		return this.getProductPrice()-d;
+	}
 	
 	
 	

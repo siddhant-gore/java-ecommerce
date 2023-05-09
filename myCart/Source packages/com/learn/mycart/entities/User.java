@@ -23,6 +23,8 @@ public class User {
 	private String userPhone;
 	@Column(length=1500, name ="user_address")
 	private String userAddress;
+	@Column(name="user_type")
+	private String userType;
 	
 
 	public User() {
@@ -31,7 +33,7 @@ public class User {
 
 	
 	public User(int userId, String userName, String userEmail, String userPassword, String userPhone,
-			String userAddress) {
+			String userAddress, String userType) {
 		
 		this.userId = userId;
 		this.userName = userName;
@@ -39,16 +41,18 @@ public class User {
 		this.userPassword = userPassword;
 		this.userPhone = userPhone;
 		this.userAddress = userAddress;
+		this.userType=userType;
 	}
 
 
-	public User(String userName, String userEmail, String userPassword, String userPhone, String userAddress) {
+	public User(String userName, String userEmail, String userPassword, String userPhone, String userAddress, String userType) {
 		
 		this.userName = userName;
 		this.userEmail = userEmail;
 		this.userPassword = userPassword;
 		this.userPhone = userPhone;
 		this.userAddress = userAddress;
+		this.userType= userType;
 	}
 
 
@@ -110,6 +114,18 @@ public class User {
 
 	public void setUserAddress(String userAddress) {
 		this.userAddress = userAddress;
+	}
+
+	
+	
+
+	public String getUserType() {
+		return userType;
+	}
+
+
+	public void setUserType(String userType) {
+		this.userType = userType;
 	}
 
 

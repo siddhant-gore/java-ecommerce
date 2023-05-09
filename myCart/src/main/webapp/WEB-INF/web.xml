@@ -10,10 +10,44 @@
   	<description></description>
   	<servlet-class>com.learn.mycart.servlets.registerServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>loginServlet</servlet-name>
+  	<display-name>loginServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.learn.mycart.servlets.loginServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>logoutServlet</servlet-name>
+  	<display-name>logoutServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.learn.mycart.servlets.logoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>productOperationServlet</servlet-name>
+  	<display-name>productOperationServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.learn.mycart.servlets.productOperationServlet</servlet-class>
+  </servlet>
+  
+  
+
   <servlet-mapping>
   	<servlet-name>registerServlet</servlet-name>
   	<url-pattern>/registerServlet</url-pattern>
   </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>loginServlet</servlet-name>
+  	<url-pattern>/loginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>logoutServlet</servlet-name>
+  	<url-pattern>/logoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>productOperationServlet</servlet-name>
+  	<url-pattern>/productOperationServlet</url-pattern>
+  </servlet-mapping>
+  
  
   
 </web-app>

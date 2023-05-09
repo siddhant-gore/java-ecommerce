@@ -1,0 +1,37 @@
+
+Psquid:S3626…"Remove this redundant jump.(ûÁÝ…8ÕüŸºÿ0HóRMINORZ
+CODE_SMELL
+csquid:S1989L"'Add a "try/catch" block for "parseInt".(üþ°Ãúÿÿÿÿ8·±¸¸ÿ0H’
+RMINORZVULNERABILITY
+csquid:S1989N"'Add a "try/catch" block for "parseInt".(¹Ü¸¬ÿÿÿÿÿ8·±¸¸ÿ0H“
+RMINORZVULNERABILITY
+bsquid:S1989„"+Add a "try/catch" block for "sendRedirect".(ß„­H8ÕüŸºÿ0HôRMINORZVULNERABILITY
+]squid:S1989P"&Add a "try/catch" block for "getPart".(”¹‰‹8Ú¨²¹ÿ0HÏRMINORZVULNERABILITY
+}squid:S2095o"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(¡Ö˜®8±ÃùØÿ0H‹RBLOCKERZBUG
+Zsquid:S1989™"$Add a "try/catch" block for "doGet".(®Ó‘ûÿÿÿÿÿHÊ	RMINORZVULNERABILITY
+Zsquid:S1989™"$Add a "try/catch" block for "doGet".(®Ó‘ûÿÿÿÿÿHÉ	RMINORZVULNERABILITY
+„squid:CommentedOutCodeLinef"<This block of commented-out lines of code should be removed.(˜«ëìüÿÿÿÿ8ñÊ“Ùÿ0H•RMAJORZ
+CODE_SMELL
+Xsquid:S1989-"(Add a "try/catch" block for "getWriter".(ÏÚ‚´HÇ	RMINORZVULNERABILITY
+lsquid:S1161+":Add the "@Override" annotation above this method signature(Ïû©ÖûÿÿÿÿHÆ	RMAJORZ
+CODE_SMELL
+dsquid:S1989/"(Add a "try/catch" block for "getWriter".(‚©¯¦ýÿÿÿÿ8‘´ò©ÿ0HÑ	RMINORZVULNERABILITY
+Osquid:S3626D"Remove this redundant jump.(ûÁÝ…8¦®öªÿ0Hí	RMINORZ
+CODE_SMELL
+asquid:S1989C"+Add a "try/catch" block for "sendRedirect".(ß„­H8Éæèªÿ0Hé	RMINORZVULNERABILITY
+hsquid:S1161—":Add the "@Override" annotation above this method signature(‹¨¯¿HÈ	RMAJORZ
+CODE_SMELL
+]squid:S1989P"&Add a "try/catch" block for "getPart".(”¹‰‹8Ú¨²¹ÿ0HÐRMINORZVULNERABILITY
+^squid:S1989O"'Add a "try/catch" block for "parseInt".(¹·®¥8·±¸¸ÿ0H•
+RMINORZVULNERABILITY
+}squid:CallToDeprecatedMethodh"3Remove this use of "getRealPath"; it is deprecated.(…Ï®Ôùÿÿÿÿ8åÓØÿ0HûRMINORZ
+CODE_SMELL
+^squid:S1989M"'Add a "try/catch" block for "parseInt".(Áô¿Ú8·±¸¸ÿ0H”
+RMINORZVULNERABILITY
+l
+squid:S106i"9Replace this use of System.out or System.err by a logger.(ÍÎÉ 8®½×Øÿ0HƒRMAJORZ
+CODE_SMELL
+‹squid:S00117/"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚©¯¦ýÿÿÿÿ8‘´ò©ÿ0HÐ	RMINORZ
+CODE_SMELL
+_squid:S1148~"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8Ø—•Ùÿ0H›RMINORZVULNERABILITY
+|squid:S2674t"JCheck the return value of the "read" call to see how many bytes were read.(ž”ê†úÿÿÿÿ8ñÊ“Ùÿ0H”RMINORZBUG

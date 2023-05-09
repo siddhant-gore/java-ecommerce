@@ -1,0 +1,43 @@
+package com.learn.mycart.dao;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.query.Query;
+
+import com.learn.mycart.entities.User;
+
+public class UserDao {
+
+    private SessionFactory sessionFactory;
+
+    public UserDao(SessionFactory factory) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public void setSessionFactory(SessionFactory sessionFactory) {
+        this.sessionFactory = sessionFactory;
+    }
+
+    public User authenticate(String email, String password) {
+       
+        Session session = null;
+        User user = null;
+        try {
+            session = sessionFactory.openSession();
+            String hql = "FROM user WHERE userEmail = :email AND userPassword = :password";
+            Query<User> query = session.createQuery(hql, User.class);
+            query.setParameter("email", email);
+            query.setParameter("password", password);
+            user = query.uniqueResult();
+           
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if (session != null) {
+                session.close();
+            }
+        }
+
+        return user;
+    }
+}
